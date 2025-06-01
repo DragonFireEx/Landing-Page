@@ -126,7 +126,6 @@ body
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid red;
 }
 
 #bottom #img-box
@@ -141,7 +140,6 @@ body
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid orange;
     gap: 0.5vw;
     row-gap: 0.5vw;
 }
