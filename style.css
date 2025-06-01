@@ -1,0 +1,239 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+#top
+{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+#heading-block
+{
+    width: 35%;
+    max-width: 650px;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    font-family: Sen;
+}
+
+#header
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+}
+
+#header h1
+{
+    font-size: 3.5em;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+#content
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: top;
+    align-items: center;
+    border: 1px solid purple;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 600px;
+}
+#content p
+{
+    text-align: center;
+    font-weight: 200;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    max-height: 69px;
+    width: 400px;
+}
+
+#content button
+{
+    width: 140px;
+    height: 40px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #252525;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 2px solid #252525;
+    transition: 0.3s ease-in-out;
+}
+
+#content button:hover
+{
+    background-color: #f0f0f0;
+    color: #252525;
+    transition: 0.3s ease-in-out;
+}
+
+#bottom
+{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+#bottom #img-box
+{
+    padding: 5vh 0;
+    width: 70%;
+    max-width: 1350px;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid orange;
+    gap: 0.5vw;
+    row-gap: 0.5vw;
+}
+
+#bottom #img-box img
+{
+    object-fit: cover;
+    transition: 2s ease-in-out;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    filter: grayscale(1);
+}
+
+#bottom #img-box img:hover
+{
+    transform: scale(1.02);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease-in-out;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+@media (max-width: 1550px)
+{
+    #header h1
+    {
+        font-size: 3em;
+    }
+
+    #img-box img
+    {
+        height: 195px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 1340px)
+{
+    #header h1
+    {
+        font-size: 3.2em;
+    }
+    #content p
+    {
+        font-size: 0.9em;
+        width: 300px;
+    }
+    #content button
+    {
+        width: 120px;
+        height: 35px;
+        font-size: 0.7em;
+    }
+    #heading-block, #top
+    {
+        height: 30vh;
+        width: 70%;
+    }
+    #bottom #img-box
+    {
+        width: 600px;
+        gap: 1vw;
+        row-gap: 1vw;
+        height: fit-content;
+    }
+    #bottom, #main
+    {
+        height: fit-content;
+    }
+    #img-box img
+    {
+        height: 210px;
+    }
+}
+
+@media (max-width: 1040px)
+{
+    #header h1
+    {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 760px)
+{
+    #header h1
+    {
+        font-size: 2em;
+    }
+    #content p
+    {
+        font-size: 0.7em;
+        width: 200px;
+    }
+}
