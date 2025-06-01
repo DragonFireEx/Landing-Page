@@ -29,7 +29,6 @@ body
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid blue;
 }
 
 #heading-block
@@ -45,7 +44,6 @@ body
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid green;
     font-family: Sen;
 }
 
@@ -58,7 +56,6 @@ body
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    border: 1px solid yellow;
 }
 
 #header h1
@@ -80,7 +77,6 @@ body
     box-sizing: border-box;
     justify-content: top;
     align-items: center;
-    border: 1px solid purple;
     flex-direction: column;
     padding-left: 5vw;
     padding-right: 5vw;
